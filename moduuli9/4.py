@@ -39,5 +39,5 @@ while(a==1):
             a=2
 
 for auto in autot:
-    print(f'Rekisterinumero: {auto.rekisterinumero}, kuljettu matka: {auto.kuljettuMatka}')
+    print(f'Rekisterinumero: {auto.rekisterinumero}, tämänhetkinen nopeus: {auto.tamanHetkinenNopeus}, huippunopeus:{auto.huippunopeus}, kuljettu matka: {auto.kuljettuMatka}')
 
