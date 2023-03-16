@@ -4,21 +4,21 @@ class Julkaisu:
 
 class Kirja(Julkaisu):
     def __init__(self, nimi, kirjoittaja, sivumaara):
-        super(nimi)
         self.kirjoittaja = kirjoittaja
         self.sivumaara = sivumaara
+        super().__init__(nimi)
 
     def tulosta_tiedot(self):
-        print(f'Nimi: {super.nimi}, Kirjoittaja: {self.kirjoittaja}, sivumäärä: {self.sivumaara} sivua.')
+        print(f'Nimi: {self.nimi}, Kirjoittaja: {self.kirjoittaja}, sivumäärä: {self.sivumaara} sivua.')
         return
 
 class Lehti(Julkaisu):
     def __init__(self, nimi, paatoimittaja):
-        super(nimi)
         self.paatoimittaja = paatoimittaja
+        super().__init__(nimi)
 
     def tulosta_tiedot(self):
-        print(f'Nimi: {super.nimi}, päätoimittaja: {self.paatoimittaja}.')
+        print(f'Nimi: {self.nimi}, päätoimittaja: {self.paatoimittaja}.')
         return
 
 lehti = Lehti('Aku Ankka', 'Aki Hyyppä')
