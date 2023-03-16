@@ -9,7 +9,7 @@ class Kirja(Julkaisu):
         super().__init__(nimi)
 
     def tulosta_tiedot(self):
-        print(f'Nimi: {self.nimi}, Kirjoittaja: {self.kirjoittaja}, sivumäärä: {self.sivumaara} sivua.')
+        print(f'Nimi: {self.nimi}, kirjoittaja: {self.kirjoittaja}, sivumäärä: {self.sivumaara} sivua.')
         return
 
 class Lehti(Julkaisu):
