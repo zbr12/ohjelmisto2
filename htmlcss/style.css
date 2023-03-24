@@ -52,3 +52,11 @@ p {
     padding: 5%;
     padding-top: 0;
 }
+#contact {
+    width: 20%;
+    display: inline-block
+}
+#kartta {
+    width: 66%;
+    display: inline-block
+}
