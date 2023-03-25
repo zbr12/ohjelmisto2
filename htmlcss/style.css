@@ -1,7 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 * {
     margin:0;
     padding:0;
 }
+body {
+    font-family: "Muli", sans-serif;
+  }
 #sailio {
     padding: 2%;
     padding-top: 0;
@@ -17,8 +21,8 @@ nav {
     clear: both;
 }
 #navbar #navlogo {
-    width: 140px;
-    height: 80px;
+    width: 120px;
+    height: 90px;
     float: left;
 }
 nav ul li:not(:first-child) {
@@ -41,7 +45,7 @@ a {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1513%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(148%2c 197%2c 102%2c 1)'%3e%3c/rect%3e%3cpath d='M360.45381337082654 176.26664829312682L374.5821108929298 337.75382791974005 536.069290519543 323.6255303976368 521.9409929974397 162.1383507710236z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1308.3975773298057 282.6183013140342L1303.8923412912256 411.63138161413235 1437.4106576299039 287.1235373526143z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M645.1058143979237 453.0863674654306L464.647123616001 424.32819682620186 519.2813619500481 574.4345329780984z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M873.9276800960982 172.63343393150632L774.0048988129187 140.16655419022845 775.2659698425916 306.2841659856367z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M274.17307066936206 454.9698791297839L293.4336984601578 545.5840085618189 384.04782789219274 526.3233807710232 364.787200101397 435.70925133898817z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M926.217%2c535.064C950.803%2c535.685%2c968.733%2c514.423%2c980.63%2c492.898C992.056%2c472.225%2c996.923%2c447.914%2c985.947%2c426.998C974.213%2c404.639%2c951.456%2c388.425%2c926.217%2c389.212C902.047%2c389.966%2c883.306%2c408.845%2c872.607%2c430.531C863.146%2c449.708%2c866.604%2c471.239%2c876.362%2c490.267C887.289%2c511.574%2c902.279%2c534.46%2c926.217%2c535.064' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1513'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
 h1 {
-    padding-top: 30%;
+    padding-top: 10%;
     text-align: center;
 }
 h2 {
@@ -54,9 +58,54 @@ p {
 }
 #contact {
     width: 20%;
-    display: inline-block
+    position: top;
+    float:left;
+    text-align: left;
 }
 #kartta {
     width: 66%;
-    display: inline-block
+    float:right;
+    max-width: 100%;
+    height: auto;
+    margin: 2%;
+}
+#main::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+div.tuote {
+    float: left;
+    width: 25%;
+    border-color: black;
+    border-style: solid;
+    margin: 2%;
+    padding: 1%;
+    overflow: hidden;
+    padding-bottom: 200px;
+    background-color: green;
+}
+#tuotteet {
+    margin: auto;
+    width: 80%;
+}
+/*div.tuote:first-child {
+    margin-left: 6%;
+}
+div.tuote:last-child {
+    margin-right: 6%;
+}*/
+#tuotteet::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+img.tuotekuva {
+max-width: 100%;
+height: auto;
+}
+figcaption {
+    color: rgb(79, 72, 72);
+    margin-bottom: 15px;
 }
