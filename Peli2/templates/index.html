@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lentopeli</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css">
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"></script>
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}?v=5">
+    <script src="{{ url_for('static', filename='index.js') }}?v=4"></script>
+</head>
+<body>
+
+<div id="welcome"></div>
+<div id="map"></div>
+<form id="single">
+  <label for="nimi">Nimi:</label>
+  <input type="text" id="nimi" name="nimi">
+  <input type="submit" value="Aloita">
+    <button id="resetButton" type="button">RESET</button>
+</form>
+
+<!-- Add the four boxes -->
+
+<div id="airport-list"></div>
+<script>
+
+</script>
+</body>
+</html>

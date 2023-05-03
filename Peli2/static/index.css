@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    font-family: Verdana, sans-serif;
+}
+
+#map {
+    width: 100vw;
+    height: 60vh; /* Update the height of the map to 50% */
+}
+
+form {
+    position: absolute;
+    right: 2rem;
+    z-index: 999;
+    padding: 1rem;
+    background-color: #ccc;
+    border: 1px solid #000;
+    width: 20rem;
+}
+
+#single {
+    top: 2rem;
+}
+
+#list-selection {
+    top: 7rem;
+}
+
+input {
+    padding: .5rem;
+}
+
+select {
+    display: block;
+    padding: .5rem;
+    margin-bottom: .3rem;
+}
+
+/* Style the boxes */
+.box {
+  width: calc(50% - 20px);
+  height: 100px;
+  margin: 10px;
+  float: left;
+  background-color: #ccc;
+}
+/* Add a clear property to the third box */
+#box3 {
+  clear: left;
+}
